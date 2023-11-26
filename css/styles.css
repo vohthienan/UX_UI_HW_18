@@ -75,4 +75,6 @@ button {
     }
 
     .flexContainer {
-        flex-direction: column; }
+        flex-direction: column; 
+    }
+}
