@@ -39,7 +39,7 @@ h1 {
 
 .workItem {
     padding: 10px;
-    margin-left: 200px;
+    margin: 100px;
     background-color: azure;
     margin-bottom: 20px;
 }
@@ -71,8 +71,8 @@ button {
 
     .workItem {
        
-        width: 100%;
+        width: 80%;
     }
 
     .flexContainer {
-        flex-direction: column;
+        flex-direction: column; }
