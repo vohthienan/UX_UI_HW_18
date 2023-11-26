@@ -25,3 +25,54 @@ h1 {
 }
 
 /* My UX Skills section coded using CSS flex */
+
+.workGrid {
+    display: grid;
+    grid-template-rows: 300px 300px; 
+    grid-template-columns: repeat(2, 400px);
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6";
+    gap: 1px;
+}
+
+.workItem {
+    padding: 10px;
+    margin-left: 200px;
+    background-color: azure;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+button {
+    padding: 10px;
+    background-color: aquamarine;
+}
+/* My Work Section Constructed using CSS Grid */
+@media only screen and (max-width: 600px) {
+    /* Mobile styles */
+
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6";
+        grid-template-rows: repeat(6, 1fr); 
+        grid-template-columns: 100%;
+        gap: 10px; 
+    }
+
+    .workItem {
+       
+        width: 100%;
+    }
+
+    .flexContainer {
+        flex-direction: column;
